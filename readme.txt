@@ -28,3 +28,6 @@ git push -u origin master 第一次推送master分支的所有内容
 //删除分支
 #git branch -d branchName
 
+//查看分支合并图
+#git log --graph 
+
