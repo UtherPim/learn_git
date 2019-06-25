@@ -3,7 +3,7 @@ Git is free software distributed under the GPL.
 Git has a mutable index called stage.
 Git tracks changes of files.
 Creating a new branch is quick AND simple
-Git add merge
+Git add merge （with error deal bug）
 
 //关联远程库
 # git remote add origin git@server-name:path/repo-name.git;(ssh)
@@ -32,3 +32,6 @@ git push -u origin master 第一次推送master分支的所有内容
 //查看分支合并图
 #git log --graph 
 
+//使用 --no-ff 参数合并分支(git 默认使用fast forward快速合并 merge分支)
+#git merge --no-ff -m "commit message" branchName
+(使用--no-ff会创建一个新的commit 所以加上-m参数写入commit message)
