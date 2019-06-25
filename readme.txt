@@ -45,3 +45,6 @@ git push -u origin master 第一次推送master分支的所有内容
 #git stash list
 //恢复指定工作区
 #git stash apply stash@{编号}
+
+//强制删除一个没有被合并过的分支
+#git branch -D branchName
