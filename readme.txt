@@ -2,6 +2,7 @@ Git is a distributed version control system.
 Git is free software distributed under the GPL.
 Git has a mutable index called stage.
 Git tracks changes of files.
+Creating a new branch is quick AND simple
 
 //关联远程库
 # git remote add origin git@server-name:path/repo-name.git;(ssh)
@@ -18,6 +19,12 @@ git push -u origin master 第一次推送master分支的所有内容
 #git branch branchName
 //切换分支
 #git checkout branchName
+//切换并创建分支
+#git checkout -b branchName
 //查看所有分支/当前分支
 #git branck (带*为当前分支)
+//合并某分支到当前分支
+#git merge branchName
+//删除分支
+#git branch -d branchName
 
