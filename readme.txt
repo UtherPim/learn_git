@@ -35,3 +35,13 @@ git push -u origin master 第一次推送master分支的所有内容
 //使用 --no-ff 参数合并分支(git 默认使用fast forward快速合并 merge分支)
 #git merge --no-ff -m "commit message" branchName
 (使用--no-ff会创建一个新的commit 所以加上-m参数写入commit message)
+
+//git 暂存(当有其他非常紧急任务时，可以暂存当前工作区)
+#git stash
+//回复stash至工作区
+#git stash apply (恢复后stash内容不删除，需要使用git stash drop删除)
+#git stash pop (恢复后stash内容删除)
+//查看stash内容
+#git stash list
+//恢复指定工作区
+#git stash apply stash@{编号}
