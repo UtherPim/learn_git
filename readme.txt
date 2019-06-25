@@ -3,6 +3,7 @@ Git is free software distributed under the GPL.
 Git has a mutable index called stage.
 Git tracks changes of files.
 Creating a new branch is quick AND simple
+Git add merge
 
 //关联远程库
 # git remote add origin git@server-name:path/repo-name.git;(ssh)
